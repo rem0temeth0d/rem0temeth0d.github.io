@@ -1,0 +1,66 @@
+<div class="pub">
+  <name>Director of Data Engineering </name>
+  <journal>FLYR, San Francisco, CA</journal><br/>
+  Data Warehouse, Data Model, Data Platform and Customer Implementations.
+  <date>2018 - Present</date>
+</div>
+
+<div class="pub">
+  <name>Principal Engineer </name>
+  <journal>Target, Sunnyvale, CA</journal><br/>
+  Data Science and Engineering, Machine Learning, Big Data
+  <date>2014 - 2018</date>
+</div>
+<div class="pub">
+  <name>Principal Engineer/Product Owner </name>
+  <journal>Hitachi Data Systems, Santa Clara, CA</journal><br/>
+  Converged Infrastructure, SAN Analytics and Visualization
+  <date>2011 - 2014</date>
+</div>
+<div class="pub">
+  <name>Lead SDK Architect, Chocolatier and DinerDash </name>
+  <journal>Playfirst Inc., San Francisco, CA </journal><br/>
+  Social Games SDK Design, Development and Adoption
+  <date>2010 - 2011</date>
+</div>
+<div class="pub">
+  <name>Software Architect</name>
+  <journal>DemandTec Inc., (Now IBM), Redwood City, CA </journal><br/>
+  Platform Engineering, Reusable UI Models and Framework
+  <date>2010</date>
+</div>
+<div class="pub">
+  <name>Principal Software Engineer</name>
+  <journal>Pramati Inc. (Now Imagenia), Mountain View, CA</journal><br/>
+  Application Development, Platform Development, UI Development,
+  <date>2005 - 2009</date>
+</div>
+<hr>
+
+<script>
+  $.ajaxSetup ({
+    // Disable caching of AJAX responses
+    cache: false
+  });
+  function loadPDFContent(target,contentType) {
+    $("#"+target).html(getContent(contentType));
+  }
+  function getContent(type) {
+    switch(type) {
+      case "cover":
+        return "<embed src='docs/Cover-2019.pdf#page=1' type='application/pdf' width='700' height='900'>"
+      case "resume":
+        return "<embed src='docs/Bio-2019.pdf#page=1' type='application/pdf' width='700' height='900'>"
+      }
+  }
+  $(function(){
+    loadPDFContent("pdfViewer","cover")
+  });
+</script>
+<div class="pub">
+   <name>for prospective employers</name><br/>
+   <date>Updated June 20th 2019</date><br/>
+   <a onclick="loadPDFContent('pdfViewer','cover')">Cover Letter</a>&nbsp; | &nbsp; <a onclick="loadPDFContent('pdfViewer','resume')">Rishik's Latest Resume</a><br/>
+   <div id="pdfViewer">
+   </div>
+</div>

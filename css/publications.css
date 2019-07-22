@@ -1,0 +1,30 @@
+div.pub {
+  padding: 5px;
+  border-width: 2px;
+  border-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.pub name {
+  font-weight: bold;
+}
+
+div.pub journal {
+  font-style: italic;
+}
+
+div.pub links {
+  color: #09434e;
+}
+
+div.pub date{
+  color: maroon;
+  font-style: italic;
+}
+
+div.pub img{
+  height: 6em;
+  align: right;
+  padding-right: 5px;
+}

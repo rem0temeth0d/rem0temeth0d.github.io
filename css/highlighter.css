@@ -1,0 +1,40 @@
+.autozoomable {
+  /*width:100px;*/
+  /*height:100px;*/
+	border-radius: 0%;
+	overflow: hidden;
+  z-index: 1000;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.autozoomable:hover {
+  -webkit-transform: scale(3.2);
+  -moz-transform: scale(3.2);
+  -ms-transform: scale(3.2);
+  -o-transform: scale(3.2);
+  transform: scale(3.2);
+}
+
+
+.autozoomable.doc {
+  /*width:100px;*/
+  /*height:100px;*/
+	border-radius: 0%;
+	overflow: hidden;
+  z-index: 1000;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.autozoomable.doc:hover {
+  -webkit-transform: scale(10);
+  -moz-transform: scale(10);
+  -ms-transform: scale(10);
+  -o-transform: scale(10);
+  transform: scale(10);
+}
